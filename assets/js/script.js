@@ -83,13 +83,13 @@ function handleAddTask(event){
     event.preventDefault();
 
     let taskNme = document.getElementById('taskNme').value;
-    let taskDescription = document.getElementById('taskDescription').value;
+    let taskDesc = document.getElementById('taskDesc').value;
     let tskDueDte = document.getElementById('tskDueDte').value;
 
     let newTask = {
         id: generateTaskId(),
         name: taskNme,
-        description: taskDescription,
+        description: taskDesc,
         dueDate: tskDueDte,
         status: "to-do"
     };
@@ -98,7 +98,7 @@ function handleAddTask(event){
     localStorage.setItem("tasks", JSON.stringify(taskList));
     renderTaskList();
 
-    document.getElementById('taskForm').reset();
+    document.getElementById('task-Form').reset();
 
     $('#formModal').modal('hide');
 }
@@ -139,7 +139,7 @@ function handleDrop(event, ui) {
 
      ui.draggable.remove();
 
-     $(event.target).find('.card-body').append(ui.draggable);
+     $(event.target).find('.card-body', '.in-progress').append(ui.draggable);
 
      localStorage.setItem("tasks", JSON.stringify(taskList));
  }
@@ -162,7 +162,7 @@ $(document).ready(function () {
 
     renderTaskList();
 
-    document.getElementById('taskForm').addEventListener('submit', handleAddTask);
+    document.getElementById('task-Form').addEventListener('submit', handleAddTask);
     document.getElementById('todo-cards').addEventListener('click', handleDeleteTask);
 
     $(".lane").droppable({
