@@ -21,3 +21,7 @@ https://arrozconpollo220.github.io/Task-Organizer-Site/
 https://github.com/arrozconpollo220/Task-Organizer-Site 
 
 ## Screenshots of the site
+![Task Board 1](https://github.com/arrozconpollo220/Task-Organizer-Site/assets/164965766/486e71ed-ea4b-4408-862d-b15dbace4f88)
+![Task Board 2](https://github.com/arrozconpollo220/Task-Organizer-Site/assets/164965766/ac925370-d63f-4f52-8e96-7450414dc61c)
+![Task Board 3](https://github.com/arrozconpollo220/Task-Organizer-Site/assets/164965766/7419ca69-e408-4c01-b41d-759ec5168f04)
+![Task Board 4](https://github.com/arrozconpollo220/Task-Organizer-Site/assets/164965766/822e8303-9dca-4e0c-93d4-98b8f0fb43ea)
